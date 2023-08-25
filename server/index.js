@@ -15,7 +15,7 @@ app.use(cors({
 }));
 app.use(cookieParser());
 
-mongoose.connect("mongodb://127.0.0.1:27017/employee");
+mongoose.connect("mongodb+srv://kanishkdeveshpatel:Kanishk7215@cluster0.a0fhq5f.mongodb.net/employee?retryWrites=true&w=majority");
 
 const verifyUser = (req, res, next) => {
     const token = req.cookies.token;
