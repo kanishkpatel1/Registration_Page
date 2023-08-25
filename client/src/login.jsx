@@ -12,7 +12,7 @@ function Login() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:4444/login', {email, password})
+        axios.post('https://registration-page-mern.vercel.app/login', {email, password})
         .then(result => {
             console.log("login: " + result.data);
             if(result.data.Status === "Success") {
