@@ -12,7 +12,7 @@ function Signup() {
     const handleSubmit = (e) => {
         e.preventDefault()
         // mongodb://localhost:27017
-        axios.post(https://registration-page-mern.vercel.app/register', {name, email, password})
+        axios.post('https://registration-page-mern.vercel.app/register', {name, email, password})
         .then(result => {
             navigate('/login')
         }).catch(err => console.log(err))
